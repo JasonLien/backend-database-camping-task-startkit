@@ -70,15 +70,15 @@ INSERT into "CREDIT_PURCHASE" (user_id, credit_package_id, purchased_credits, pr
 ((select id from "USER" where email = 'wXlTq@hexschooltest.io'),
   (select id from "CREDIT_PACKAGE" where name = '14 堂組合包方案'),
   (select credit_amount from "CREDIT_PACKAGE" where name = '14 堂組合包方案'),
-  (select price from "CREDIT_PACKAGE" where name = '14 堂組合包方案'));
+  (select price from "CREDIT_PACKAGE" where name = '14 堂組合包方案')),
 
-INSERT into "CREDIT_PURCHASE" (user_id, credit_package_id, purchased_credits, price_paid) values
+
 ((select id from "USER" where email = 'wXlTq@hexschooltest.io'),
   (select id from "CREDIT_PACKAGE" where name = '21 堂組合包方案'),
   (select credit_amount from "CREDIT_PACKAGE" where name = '21 堂組合包方案'),
-  (select price from "CREDIT_PACKAGE" where name = '21 堂組合包方案'));
+  (select price from "CREDIT_PACKAGE" where name = '21 堂組合包方案')),
 
-INSERT into "CREDIT_PURCHASE" (user_id, credit_package_id, purchased_credits, price_paid) values
+
 ((select id from "USER" where email = 'richman@hexschooltest.io'),
   (select id from "CREDIT_PACKAGE" where name = '14 堂組合包方案'),
   (select credit_amount from "CREDIT_PACKAGE" where name = '14 堂組合包方案'),
@@ -97,13 +97,13 @@ INSERT into "CREDIT_PURCHASE" (user_id, credit_package_id, purchased_credits, pr
     -- 2. 將用戶`肌肉棒子`新增為教練，並且年資設定為2年
     -- 3. 將用戶`Q太郎`新增為教練，並且年資設定為2年
 INSERT into "COACH" (user_id, experience_years) values 
-((select id from "USER" where email = 'lee2000@hexschooltest.io'), 2)
+((select id from "USER" where email = 'lee2000@hexschooltest.io'), 2),
 
-INSERT into "COACH" (user_id, experience_years) values 
-((select id from "USER" where email = 'muscle@hexschooltest.io'), 2)
 
-INSERT into "COACH" (user_id, experience_years) values 
-((select id from "USER" where email = 'starplatinum@hexschooltest.io'), 2)
+((select id from "USER" where email = 'muscle@hexschooltest.io'), 2),
+
+ 
+((select id from "USER" where email = 'starplatinum@hexschooltest.io'), 2);
 
 
 -- 3-2. 新增：承1，為三名教練新增專長資料至 `COACH_LINK_SKILL` ，資料需求如下：
