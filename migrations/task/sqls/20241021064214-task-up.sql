@@ -34,6 +34,7 @@ WHERE email = 'muscle@hexschooltest.io';
 UPDATE "USER"
 SET ROLE = 'COACH'
 WHERE email ='starplatinum@hexschooltest.io';
+
 -- 1-3 刪除：刪除USER 資料表中，用 Email 找到透明人，並刪除該筆資料
 DELETE FROM "USER"
 WHERE email = 'opcatiy0@hexschooltest.io';
